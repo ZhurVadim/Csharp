@@ -62,6 +62,7 @@ double GetLenght(int x1, int y1, int z1, int x2, int y2, int z2)
 // 3 -> 1, 8, 27
 // 5 -> 1, 8, 27, 64, 125
 
+
 Console.Write("Введите число: ");
 int N = Convert.ToInt32(Console.ReadLine());
 
