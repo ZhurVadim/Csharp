@@ -18,23 +18,23 @@
 
 // Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
 
-Random random = new Random();  
-int randomNumber = random.Next();
-Console.WriteLine(randomNumber);
+// Random random = new Random();  
+// int randomNumber = random.Next();
+// Console.WriteLine(randomNumber);
 
 
-int ThirdNumber(int num)
-{
-    while (num / 100 > 9)
-    {
-        num = num / 10;
-    }
-    int ThirdNumber = num%10;
-    return ThirdNumber;
-}
+// int ThirdNumber(int num)
+// {
+//     while (num / 100 > 9)
+//     {
+//         num = num / 10;
+//     }
+//     int ThirdNumber = num%10;
+//     return ThirdNumber;
+// }
 
-int result =  ThirdNumber(randomNumber);
-Console.WriteLine(result);
+// int result =  ThirdNumber(randomNumber);
+// Console.WriteLine(result);
 
 
 // Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, 
