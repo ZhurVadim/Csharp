@@ -2,24 +2,24 @@
 // 14212 -> нет; 12821 -> да; 23432 -> да
 
 
-// string input = Console.ReadLine();
-// bool GetRev(string input)
-// {
-//     if((new string(input.Reverse().ToArray())) == input)
-//     return true;
-//     return false;
-// }
+string input = Console.ReadLine();
+bool GetRev(string input)
+{
+    if((new string(input.Reverse().ToArray())) == input)
+    return true;
+    return false;
+}
 
-// bool result = GetRev(input);
-// if(result == true)
-// {
-//     Console.WriteLine("Да");
-// }
+bool result = GetRev(input);
+if(result == true)
+{
+    Console.WriteLine("Да");
+}
 
-// else
-// {
-//     Console.WriteLine("Нет");
-// }
+else
+{
+    Console.WriteLine("Нет");
+}
 
 
 
@@ -44,14 +44,29 @@ bool isNumberZ_2 = int.TryParse(Console.ReadLine(), out int z2);
 
 
 
-// if(!isNumberX_1 || !isNumberX_2 || isNumberY_1 || isNumberY_2)
-// {
-//     Console.WriteLine("Числа введены неверно");
-//     return;
-// }
+// // if(!isNumberX_1 || !isNumberX_2 || isNumberY_1 || isNumberY_2)
+// // {
+// //     Console.WriteLine("Числа введены неверно");
+// //     return;
+// // }
 Console.Write($"Расстояние: {GetLenght(x1, y1, z1, x2, y2, z2)}");
 
 double GetLenght(int x1, int y1, int z1, int x2, int y2, int z2)
 {
     return Math.Sqrt(Math.Pow((x2-x1), 2) +  Math.Pow((y2-y1), 2) + Math.Pow((z2-z1), 2));
+}
+
+
+
+// Задача 23. Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
+// 3 -> 1, 8, 27
+// 5 -> 1, 8, 27, 64, 125
+
+Console.Write("Введите число: ");
+int N = Convert.ToInt32(Console.ReadLine());
+
+for( int i = 1; i <= N; i++)
+{
+    // Console.WriteLine($"{i * i * i}"); 
+    Console.WriteLine(Math. Pow(i,3));
 }
